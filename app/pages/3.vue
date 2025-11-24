@@ -1,7 +1,7 @@
 <template>
   <mp-slide>
     <template #header>
-      <h1>Технический стек</h1>
+      <h1>Выбор технологий</h1>
     </template>
     <mp-bento-grid :cols="8" :rows="5">
       <!-- Основные фреймворки и языки -->
@@ -14,7 +14,7 @@
             src="img/typescript-logo.svg"
             alt="TypeScript"
             fit="contain"
-            :zoom="0.8"
+            :zoom="0.7"
           />
         </template>
         <p>
@@ -38,6 +38,7 @@
             alt="Vue.js"
             fit="contain"
             aspectRatio="1/1"
+            :zoom="0.8"
           />
         </template>
         <p>Прогрессивный фреймворк для создания пользовательских интерфейсов</p>

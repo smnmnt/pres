@@ -44,8 +44,11 @@ header {
 <script lang="ts" setup>
 const route = useRoute();
 const pageNum = computed(() => {
-  const slug = route.params.slug;
-  return typeof slug === "string" ? parseInt(slug, 10) : 1;
+  const pathSegments = route.path.split("/").filter(Boolean);
+  const lastSegment = pathSegments[pathSegments.length - 1];
+  if (!lastSegment) return 1;
+  const parsed = parseInt(lastSegment, 10);
+  return isNaN(parsed) ? 1 : parsed;
 });
 const props = defineProps<{
   hero?: boolean;

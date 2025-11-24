@@ -10,7 +10,7 @@ body {
 
 :root {
   /* Base color values */
-  --base-hue: 245deg;
+  --base-hue: 145deg;
 
   /* Colors */
   --clr-background: lch(95% 3 var(--base-hue));

@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Base color values */
+  --base-hue: 245deg;
+
+  /* Colors */
+  --clr-background: lch(95% 3 var(--base-hue));
+  --clr-primary: lch(80% 50 var(--base-hue));
+  --clr-primary-container: lch(30% 50 var(--base-hue));
+  --clr-surface-container: lch(10% 10 var(--base-hue));
+  --clr-on-surface: lch(20% 8 var(--base-hue));
+  --clr-on-surface-variant: lch(40% 12 var(--base-hue));
+  --clr-outline: lch(50% 5 var(--base-hue));
+
+  /* Spacing */
+  --golden-ratio: 1.618;
+  --half-step: 1.272;
+
+  /* Base spacing value */
+  --base-spacing: 1rem;
+
+  /* Medium */
+  --sp-m: var(--base-spacing);
+
+  /* Larger */
+  --sp-l: calc(var(--sp-m) * var(--golden-ratio));
+  --sp-xl: calc(var(--sp-l) * var(--golden-ratio));
+  --sp-xxl: calc(var(--sp-xl) * var(--golden-ratio));
+
+  /* Smaller */
+  --sp-s: calc(var(--sp-m) / var(--golden-ratio));
+  --sp-xs: calc(var(--sp-s) / var(--golden-ratio));
+  --sp-xxs: calc(var(--sp-xs) / var(--golden-ratio));
+
+  /* Half steps */
+  --sp-hl: calc(var(--sp-m) * var(--half-step));
+  --sp-hxl: calc(var(--sp-l) * var(--half-step));
+  --sp-hxxl: calc(var(--sp-xl) * var(--half-step));
+  --sp-hxxxl: calc(var(--sp-xxl) * var(--half-step));
+
+  /* Outline */
+  --sp-outline: 2px;
+
+  /* Base scale value */
+  --base-scale: 1rem;
+  --optical-correction: -0.2;
+
+  /* Typography scales */
+  --ts-body: var(--base-scale);
+  --ts-label: calc(var(--ts-body) / var(--half-step));
+  --ts-title: calc(var(--ts-body) * var(--half-step));
+  --ts-headline: calc(var(--ts-title) * var(--golden-ratio));
+  --ts-display: calc(var(--ts-headline) * var(--golden-ratio));
+}
+
+:is(h1) {
+  font-size: var(--ts-display);
+}
+
+:is(h2) {
+  font-size: var(--ts-headline);
+}
+
+:is(h3) {
+  font-size: var(--ts-title);
+}
+
+:is(h4) {
+  font-size: var(--ts-body);
+}
+
+:is(h5) {
+  font-size: var(--ts-body);
+}
+
+:is(h6) {
+  font-size: var(--ts-body);
+}

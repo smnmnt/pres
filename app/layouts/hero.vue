@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <mp-header />
+    <mp-header hero />
     <main>
       <slot />
     </main>

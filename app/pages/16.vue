@@ -1,22 +1,16 @@
 <template>
   <div class="title-page">
     <div class="title">
-      <h1>Teamly - трекер задач для каждого</h1>
-      <h3>Разработка архитектуры MVP и реализация Kanban-доски</h3>
+      <h1>Спасибо за внимание✨</h1>
     </div>
-    <div class="credits">
-      <p class="credits-text">Команда проекта</p>
-      <ul>
-        <li><span>Team Lead:</span> <b>Ларин Александр</b></li>
-        <li><span>Frontend Developer:</span> <b>Асеева Александра</b></li>
-        <li><span>Comms & Marketing:</span> <b>Цейгалов Андрей</b></li>
-        <li><span>Backend Developer:</span> <b>Кособреев Олег</b></li>
-        <li><span>UI/UX Designer:</span> <b>Князевская Анастасия</b></li>
-        <li><span>DevOps Engineer:</span> <b>Бурчанинова Дарья</b></li>
-      </ul>
-    </div>
+    <div class="credits"></div>
     <div class="image">
-      <mp-image src="img/family.png" alt="Teamly" fit="contain" :zoom="1.125" />
+      <mp-image
+        src="img/family-2.png"
+        alt="Teamly"
+        fit="contain"
+        :zoom="1.125"
+      />
     </div>
   </div>
 </template>
@@ -34,12 +28,10 @@ definePageMeta({
   grid-template-columns: 3fr 1fr;
   gap: var(--sp-m);
   margin: 3rem 2rem;
-  overflow: hidden;
-  height: auto;
 }
 
 .title {
-  text-align: left;
+  text-align: center;
   align-self: center;
   grid-column: 1 / 2;
 }

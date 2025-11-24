@@ -29,7 +29,24 @@ async function takeScreenshot(url: string, filename: string) {
 
 const baseUrl = "http://localhost:3000";
 // Список эндпоинтов страниц
-const pages = ["/1", "/2", "/3"];
+const pages = [
+  "/1",
+  "/2",
+  "/3",
+  "/4",
+  "/5",
+  "/6",
+  "/7",
+  "/8",
+  "/9",
+  "/10",
+  "/11",
+  "/12",
+  "/13",
+  "/14",
+  "/15",
+  "/16",
+];
 
 async function main() {
   for (const endpoint of pages) {
